@@ -19,7 +19,7 @@ class UsersCollectionTest extends TestCase
      */
     public function testUsersCollection()
     {
-        $users = User::all();
+      $users = User::all();
          get_class($users);
 
         $this->assertEquals('Illuminate\Database\Eloquent\Collection', get_class($users));

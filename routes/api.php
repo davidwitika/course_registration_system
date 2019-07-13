@@ -23,6 +23,13 @@ Route::middleware('auth:api')->get('/users', function (Request $request) {
 });
 
 
-Route::get('/courses', function (Request $request){
+/*Route::get('/courses', function (Request $request){
    return response()->json(Course::all());
-});
+});*/
+
+
+Route::post('/post/create', 'PostController@store');
+Route::get('/post/edit/{id}', 'PostController@edit');
+Route::post('/post/update/{id}', 'PostController@update');
+Route::delete('/post/delete/{id}', 'PostController@delete');
+Route::get('/posts', 'PostController@index');

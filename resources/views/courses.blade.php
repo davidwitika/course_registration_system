@@ -11,6 +11,9 @@
 <body>
 <div id="app">
     <example-component></example-component>
+    <HomeComponent></HomeComponent>
+    <Indexcomponent></Indexcomponent>
+    <Editcomponent></Editcomponent>
 </div>
 <script src="{{ mix('js/app.js') }}" type="text/javascript"></script>
 </body>
